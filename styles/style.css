@@ -3,3 +3,59 @@
   box-sizing:border-box;  
 }
 
+body {
+    background-color: white;
+}
+header {
+    margin: 0;
+}
+ul {
+    border: solid;
+    color: white;
+    display: block; 
+    margin: 0;
+    width: 100%;
+}
+li {
+    display: inline;
+    font-size: 1.3em;
+    color: #4CB167;
+}
+#logo {
+    width: 20%; 
+}
+
+div {
+    display: block; 
+}
+
+#blok {
+    position: relative;
+}
+#blok h3 {
+    margin:0; padding; 0.5em;
+    width: 70em;
+    right:0;
+    left: 0;
+    color: black;
+    background-color: lightgray;
+    font-family: serif;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.zoek {
+    font-size: 2em;
+    color: #4CB167;
+    display: block;
+}
+
+
+.zoekbutton {
+    font-size: 100%;
+    color: black;
+    background-color: white;
+}
+
+
+
