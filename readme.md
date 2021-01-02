@@ -55,12 +55,15 @@ nvt.
 ### KERSTVAKANTIE
 
 27-12-2020
+
 In de kerstvakantie ben ik eindelijk stappen gaan maken met mijn html code. Ik heb hiervoor veel filmpjes gekeken via youtube of verschillende codepens die online staan. 
 
 29-12-2020
+
 Het begrijpen van html en css gaat steeds beter. Ik krijg langzamer hand onder de knie welke elementen gebruikt kunnen/moeten worden en hoe ik de elementen kan stijlen.
 
 02-01-2021
+
 De home pagina van Nike begint er steeds meer op de lijken. Wel nog op de mobiele versie. Opmaak (goede lettertypen en kleur) en media queries moeten nog worden toegepast.
 
 
