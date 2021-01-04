@@ -1,26 +1,30 @@
 /* CSS Document */
 
-*, *::after, *::before {
-  box-sizing:border-box;  
-  font-family:saira, sans-serif;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: saira, sans-serif;
 }
 
 body {
-  margin:0;
+    margin: 0;
 }
+
 
 /*HEADER */
 
 header {
     padding: 0 0.75em;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-   background-color: white;
-    position:sticky; 
+    background-color: white;
+    position: sticky;
     top: 0;
     z-index: 1;
 }
+
 
 /* alle links in de header */
 
@@ -29,58 +33,53 @@ header a {
     text-decoration: none;
 }
 
+
 /* LOGO */
 
-header>a:first-of-type a{
+header>a:first-of-type a {
     padding: 0.5em;
     line-height: 1;
-    
     display: grid;
-    grid-template-columns:min-content min-content;
-    grid-gap:0.25em;
+    grid-template-columns: min-content min-content;
+    grid-gap: 0.25em;
     align-items: center;
-    
-    
 }
 
-header > a:first-of-type img {
-  height:2.5em;
+header>a:first-of-type img {
+    height: 2em;
     position: relative;
     right: 150px;
-
 }
+
 
 /* ZOEK */
 
-header>nav>a:nth-of-type(1) a{
-  display:block;
-  width:2em; 
-  height:2.5em;
-  font-size:1em;
-  line-height:2.5em;
-  text-align:center;
-  
-  border-radius:.25em;
-    
+header>nav>a:nth-of-type(1) a {
+    display: block;
+    width: 2em;
+    height: 2.5em;
+    font-size: 1em;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: .25em;
 }
 
-header>nav> a:nth-of-type(1)::before a{
-  content
-  display: inline-block;
-  width: 1em;
-  transform: scale(0.75);
+header>nav>a:nth-of-type(1)::before a {
+    content display: inline-block;
+    width: 1em;
+    transform: scale(0.75);
 }
 
-nav:nth-of-type(2) a{
-  display:block;
-  width:2em; height:2.5em;
-  font-size:2em;
-  line-height:2.5em;
-  text-align:center;
-  
-  border-radius:.25em;
-    
+nav:nth-of-type(2) a {
+    display: block;
+    width: 2em;
+    height: 2.5em;
+    font-size: 2em;
+    line-height: 2.5em;
+    text-align: center;
+    border-radius: .25em;
 }
+
 
 /*MENU */
 
@@ -94,7 +93,7 @@ nav {
 nav button {
     position: relative;
     width: 1em;
-    height:1.5em;
+    height: 1.5em;
     left: 570px;
     font-size: 3em;
     background-color: white;
@@ -113,12 +112,12 @@ nav button::before {
 }
 
 nav.toonMenu button::before {
-    content: "\274C";
+    content: none;
 }
 
 nav ul {
     margin: 0;
-    padding: 4em 0 0;
+    padding: 0em 18em 0em 2em;
     background: white;
     list-style: none;
     position: fixed;
@@ -132,8 +131,17 @@ nav ul {
     z-index: 50;
 }
 
+nav ul a {
+    font-size: 20px;
+    font-family: Futura;
+    text-align: left;
+    position: relative;
+    line-height: inherit;
+    top: 40px;
+}
+
 nav.toonMenu ul {
-    transform: translatex(0);
+    transform: translatex(300px);
 }
 
 li {
@@ -152,7 +160,7 @@ li a {
     transition: 0.3s;
 }
 
-li a:hover {
+header li a:hover {
     box-shadow: 0 -5px 0px #000 inset;
     500px 0 0 color: black inset;
     padding: 35px 25px 45px 25px;
@@ -167,7 +175,7 @@ li a:hover {
     }
     nav ul {
         position: relative;
-        padding: 0;
+        padding: 0px;
         transform: none;
         background: none;
         display: flex;
@@ -181,19 +189,22 @@ li a:hover {
 /* SLIDE BALK */
 
 #p-one {
-    display: block;
-    padding: 1.5em;
-    text-align: center;
+    min-height: 58px;
+    padding-top: 10px;
     font-size: 100%;
-    vertical-align: baseline;
-    background-color:ghostwhite;
-    font-family: inherit;
-    font-family: "Helvetica Neue";
+    background-color: #f5f5f5;
+    font-family: "Helvetica";
+    text-align: center;
+    box-shadow: inset 0 -1px 0 0 #e5e5e5;
+    line-height: 40px;
+    font-weight: 100;
+}
+.meerinfo {
+    font-weight: 400;
 }
 
 
 /* ZOEKBALK */
-
 .zoek-balk {
     position: relative;
     right: 110px;
@@ -236,14 +247,19 @@ li a:hover {
    
 }
 
+
+/* WINKELMANDJE */
+
 .winkelmandje {
-  position:relative;
-  padding:.125em .375em;
-  font-size:2em;
-  line-height:1em;
-  text-decoration:none;
-  border-radius:.25rem;
+    position: relative;
+    padding: .125em .375em;
+    font-size: 2em;
+    line-height: 1em;
+    text-decoration: none;
+    border-radius: .25rem;
     right: 150px;
+    padding: 0.5em;
+    line-height: 1;
 }
 
 .zoek {
@@ -253,34 +269,52 @@ li a:hover {
   line-height:1em;
   text-decoration:none;
   border-radius:.25rem;
-    left: 95px;
+    left: 95px;}
 
-}
 
 /* EERSTE SECTION */
+
 #start {
-    max-width: 100%;
-    max-height: auto;
+    max-height:auto;
+    border: 20px solid;
+    border-color: white;
+    align-content: center;
+    right:30px;
+    z-index: 0;
     position: relative;
     left: 20px;
-    top: 20px;
-    bottom: 20px;
-    right: 20px;
-    z-index: 0;
+    
+    
 }
+/* MEDIA QUERIES */
 
+@media (min-width:600px) {
+ 
+    
+}
 section button.bekijk {
     border: none;
-	cursor: pointer;
-	border-radius: 25px;
-	color: black;
-    background-color: white;
-	font-size: 16px;
-    width: 90px;
-  height: 40px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Helvetica";
+    width: 150px;
+    height: 50px;
     position: relative;
-    bottom: 48px;
-    left: 40px;
+    bottom: 130px;
+    left: 70px;
+
+}
+
+#play {
+    width: 30px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    bottom: 2px;
 }
 
 #p-two {
@@ -289,30 +323,36 @@ section button.bekijk {
     text-align: left;
     font-size: 140%;
     vertical-align: baseline;
-    background-color:white;
-    font-family: inherit;
-    font-family: "Helvetica Neue";
-   
+    background-color: white;
+    font-family: "Helvetica";
+    position: relative;
+    bottom: 40px;
+    left: 10px;
+    font-weight: 400;
 }
 
 h2 {
     position: relative;
-    font-size: 50px;
+    left: 10px;
+    font-size: 63px;
     font-weight: 600;
     text-align: center;
+    font-family: "Futura-CondensedExtraBold", sans-serif;
 }
 
 section button.ontdek-je-drive {
     border: none;
-	cursor: pointer;
-	border-radius: 25px;
-	color: white;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
     background-color: black;
-	font-size: 20px;
+    font-size: 22px;
     width: 200px;
-  height: 40px;
+    height: 50px;
     position: relative;
-    left: 40px;
+    left: 30px;
+    bottom: 30px;
+    font-family: 'Helvetica';
 }
 
 h3 {
@@ -322,100 +362,208 @@ h3 {
     font-size: 28px;
     font-weight: 500;
     position: relative;
-    top: 70px;
+    top: 50px;
 }
 
 #trending {
     max-width: 60%;
     max-height: auto;
-    display:block;
+    display: block;
     position: relative;
-    left: 30px;
-    top: 20px;
-    bottom: 20px;
-    right: 20px;
+    border: 30px solid;
+    border-color: white;
     z-index: 0;
 }
 
 h4 {
-    display: block;
-    padding: 0.5em;
     text-align: left;
-    font-size: 16px;
-    font-weight: 600;
-    position: relative;
-    left: 30px;
-}
-
-#p-three {
-    display: block;
-    padding: 0em;
-    text-align: left;
-    font-size: 16px;;
-    vertical-align: baseline;
-    background-color:white;
-    font-family: inherit;
+    font-size: 22px;
+    font-weight: 500;
     font-family: "Helvetica Neue";
     position: relative;
     left: 30px;
+    bottom:50px;
 }
+h4:nth-of-type(2) {
+    position: relative;
+    bottom: 98px;
+    font-weight: 400;
+}
+h4:nth-of-type(4) {
+    position: relative;
+    bottom: 98px;
+    font-weight: 400;
+}
+#p-three {
+    text-align: left;
+    font-size: 22px;
+    color: #757575;
+    vertical-align: baseline;
+    background-color: white;
+    font-family: inherit;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    position: relative;
+    left: 30px;
+    bottom: 75px;
+}
+#buitenkleding {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    position: relative;
+    border: 23px solid;
+    border-color: white;
+    z-index: 0;
+   
+}
+
+#laagjes {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+    position: relative;
+    border: 23px solid;
+    border-color: white;
+    z-index: 0;
+    bottom: 200px;
+}
+
+
 
 #hardlopen {
     max-width: 100%;
     max-height: auto;
-    display:block;
+    display: block;
     position: relative;
-    left: 30px;
-    top: 20px;
-    bottom: 20px;
-    right: 20px;
+     border: 23px solid;
+    border-color: white;
     z-index: 0;
+     bottom: 400px;
 }
 
 #p-four {
     display: block;
     padding: 1em;
     text-align: left;
-    font-size: 140%;
+    font-size: 160%;
     vertical-align: baseline;
     font-family: inherit;
-    font-family: "Helvetica Neue";
+    font-family: "Helvetica";
     position: relative;
-    bottom: 200px;
-    left: 50px;
+    bottom: 240px;
+    left: 30px;
     color: white;
 }
 
+#p-five {
+    display: block;
+    padding: 1em;
+    text-align: left;
+    font-size: 160%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-family: "Helvetica";
+    position: relative;
+    bottom: 440px;
+    left: 30px;
+    color: white;
+}
+
+#p-six {
+    display: block;
+    padding: 1em;
+    text-align: left;
+    font-size: 160%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-family: "Helvetica";
+    position: relative;
+    bottom: 640px;
+    left: 30px;
+    color: white;
+}
 section button.shop {
     border: none;
-	cursor: pointer;
-	border-radius: 25px;
-	color: black;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
     background-color: white;
-	font-size: 20px;
-    width: 100px;
-  height: 40px;
+    font-size: 22px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 120px;
+    height: 50px;
     position: relative;
-    left: 70px;
-    bottom: 200px;
+    left: 60px;
+    bottom: 250px;
+}
+
+section button.shop-kids {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 60px;
+    bottom: 660px;
+}
+
+section button.shop1 {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 60px;
+    bottom: 460px;
+}
+
+section button.shop2 {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 22px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 60px;
+    bottom: 660px;
 }
 
 /* FOOTER */
+
 footer {
-    background-color:black;
+    background-color: black;
     padding: 0 0.75em;
-    
 }
 
-.f-one{
-    color:white;
+.f-one {
+    color: white;
     padding: 1em;
     text-align: left;
     font-size: 14px;
-    position: relative; 
+    position: relative;
     right: 15px;
     top: 40px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 hr {
@@ -423,7 +571,7 @@ hr {
 }
 
 .help {
-    color: white; 
+    color: white;
     text-align: left;
     position: relative;
     left: 30px;
@@ -433,7 +581,7 @@ hr {
 }
 
 .over-nike {
-    color: white; 
+    color: white;
     text-align: left;
     position: relative;
     left: 30px;
@@ -442,59 +590,59 @@ hr {
     font-weight: 600;
 }
 
+
 /* ICONS */
 
-
 .twitter {
-    position:relative;
+    position: relative;
     left: 30px;
     top: 140px;
     color: black;
-    background-color:gray;
+    background-color: gray;
     align-items: center;
-    font-size:1.5em;
+    font-size: 1.5em;
     padding: 0.3em;
     border-radius: 50%;
     margin-right: 20px;
 }
 
 .facebook {
-    position:relative;
+    position: relative;
     left: 30px;
     top: 140px;
     color: black;
-    background-color:gray;
+    background-color: gray;
     align-items: center;
-    font-size:1.5em;
+    font-size: 1.5em;
     padding: 0.3em;
     border-radius: 50%;
+
     margin-right: 20px;
 }
 
 .youtube {
-    position:relative;
+    position: relative;
     left: 30px;
     top: 140px;
     color: black;
-    background-color:gray;
+    background-color: gray;
     align-items: center;
-    font-size:1.5em;
+    font-size: 1.5em;
     padding: 0.3em;
     border-radius: 50%;
     margin-right: 20px;
 }
 
 .instagram {
-    position:relative;
+    position: relative;
     left: 30px;
     top: 140px;
     color: black;
-    background-color:gray;
+    background-color: gray;
     align-items: center;
-    font-size:1.5em;
+    font-size: 1.5em;
     padding: 0.3em;
     border-radius: 50%;
-    
 }
 
 .p-five {
@@ -503,3 +651,12 @@ hr {
     top: 200px;
     left: 30px;
 }
+
+
+
+
+
+
+ 
+    
+
