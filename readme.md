@@ -24,8 +24,26 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
 
+In de vakantie heb ik veel aan mijn code gezeten en ben daardoor vergeleken met wat ik eerst had aardig opgeschoten. Ik begin coderen langzaam maar zeker weer onder de knie te krijgen, maar loop nog wel vast met het uitlijnen. 
+
+- Site was nog niet in de goede grootte voor mobiel. Ik heb een verkeerde scherm grootte gebruikt. 
+- De header lijnt niet mooi uit en schuift niet goed mee
+- Foto's staan nog niet volledig op de goede plek 
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent met korte uitleg-
+
+### Agenda voor meeting
+
+Met mijn groepje is niks afgesproken of besproken.
+
+
+### Verslag van meeting
+
+Justus heeft me geholpen met de werking van mijn header. Op de header is nu flex-box toegepast waardoor hij mooi uitlijnt en goed mee schuift. Ik wil nu deze zelfde manier toe gaan passen op mijn foto's.
 
 
 ## Voortgang 2 (week 5)
