@@ -6,9 +6,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. https://codepen.io/RajRajeshDn/pen/RwrNPxx 
+2. https://www.youtube.com/watch?v=v1PeTDrw6OY
+3. https://kristjanjarv.com/kristjan_jarv_commercial_sport_photography/ 
+4. https://www.nike.com/nl/ 
+5. https://en.wikipedia.org/wiki/Jumpman_(logo)
+6. https://1000merken.com/converse-logo/ 
+
+7. Codepens van de oefeningen die op DLO staan 
 
 
 
@@ -60,12 +65,6 @@ Tijdens het tweede voortgangsgesprek kon ik helaas niet aanwezig zijn vanwege st
 
 -samen met je groepje opstellen- Met mijn groepje is niks afgesproken of besproken.
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
 ### Verslag van meeting
 
 nvt.
@@ -99,12 +98,6 @@ Voor het eerste voortgangsgesprek was ik nog totaal niet ver. Ik had zo goed als
 
 -samen met je groepje opstellen- Met mijn groepje is niks afgesproken of besproken.
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
 ### Verslag van meeting
 
 Justus heeft mijn html gezien en voorgesteld om samen nog een keer te bellen om me op weg te helpen met de basis van html. Dit hebben we vervolgens samen gedaan wat ik erg fijn vond.
@@ -120,7 +113,7 @@ Justus heeft mijn html gezien en voorgesteld om samen nog een keer te bellen om 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -blauw-
+**Je startniveau:** -heel blauw-
 
 **Je focus:** -Ik denke surface plane, maar sluit responsive nog niet uit-
 
