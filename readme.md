@@ -23,7 +23,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+<img src="eindresultaat.png" width="375px" alt="eindresultaat">
 
 
 
