@@ -7,50 +7,66 @@
     font-family: saira, sans-serif;
 }
 
+html,
 body {
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a:focus {
+    text-decoration: underline;
+    background-color: lightyellow;
 }
 
 
-/*HEADER */
+/*Header */
 
 header {
-    padding: 0 0.75em;
+    padding: 0.75em;
     display: flex;
     flex-direction: row-reverse;
     background-color: white;
     position: sticky;
-    top: 0;
+    top: 0.1px;
     z-index: 1;
 }
 
-/* LOGO */
-header > a:first-of-type {
+
+/* Logo */
+
+header>a:first-of-type {
     order: 4;
     flex-grow: 3;
-    padding: 0.5em;
-}
-header>a:first-of-type img {
-    height: 2em;
+    padding: 1em 0.5em;
 }
 
-/* MENU */
+header>a:first-of-type img {
+    height: 1.5em;
+}
+
+
+/* Menu */
+
 nav {
     order: 1;
 }
-/* MENU BUTTON*/
+
+
+/* Menu button*/
 
 nav button {
-    /* position: relative; */
-    width: 1em;
+    width: 1.5em;
     height: 1.5em;
-    /* left: 570px; */
     font-size: 2em;
     background-color: white;
     border: none;
     cursor: pointer;
     z-index: 100;
+    line-height: 1.9em;
 }
+
+
 nav button::before {
     content: "\2630 ";
     display: inline-block;
@@ -58,25 +74,60 @@ nav button::before {
     transform: scale(.75);
 }
 
-/* ZOEKEN KNOPJE */
+nav button:hover {
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+
+nav button:active{
+    background-color: limegreen;
+}
+
+
+/* Zoekknop */
+
 .zoek {
     order: 2;
     color: black;
-    padding: .3em .375em;
-    font-size: 1.6em;
+    padding:0.5em 0.5em;
+    font-size: 1.2em;
+    line-height: 2.2em;
 }
-/* WINKELMANDJE */
+
+.zoek:hover {
+    background-color: #e5e5e5;
+    border-radius:50%;
+}
+
+.zoek:active{
+    background-color: limegreen;
+}
+
+/* Winkelmandje */
+
 .winkelmandje {
     order: 3;
     color: black;
-    padding: .3em .375em;
-    font-size: 1.6em;
+    padding: 0.5em 0.5em;
+    font-size: 1.2em;
+    line-height: 2em;
 }
 
+.winkelmandje:hover {
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+
+.winkelmandje:active{
+    background-color: limegreen;
+}
+
+
 /* Navigatie lijst */
+
 nav ul {
     margin: 0;
-    padding: 0em 18em 0em 2em;
+    padding: 0em 10em 0em 1em;
     background: white;
     list-style: none;
     position: fixed;
@@ -91,191 +142,173 @@ nav ul {
 }
 
 nav ul a {
-    font-size: 20px;
-    font-family: Futura;
+    font-size: 23px;
+    font-family: "Helvetica Neue";
     text-align: left;
     position: relative;
-    line-height: inherit;
-    top: 40px;
+    top: 50px;
+    left: 20px;
+    font-weight: 400;
 }
 
 nav.toonMenu ul {
-    transform: translatex(300px);
+    transform: translatex(60px);
 }
 
-li {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-li a {
+li .hamburger {
     color: black;
     text-decoration: none;
     display: block;
-    padding: 40px 25px;
-    font-size: 18px;
+    padding: 3px;
+    font-size: 22px;
     line-height: 1;
     transition: 0.3s;
 }
 
-header li a:hover {
-    box-shadow: 0 -5px 0px #000 inset;
-    500px 0 0 color: black inset;
-    padding: 35px 25px 45px 25px;
+.fa-chevron-right {
+    font-size: 15px;
+    position: relative;
+    left: 250px;
+    top: 30px;
 }
 
-@media (min-width:64em) {
-    nav {
-        order: 0;
-    }
-    nav button {
-        display: none;
-    }
-    nav ul {
-        position: relative;
-        padding: 0px;
-        transform: none;
-        background: none;
-        display: flex;
-    }
-    nav a {
-        border: none;
-    }
+nav .jordan {
+    position: fixed;
+    left: 15px;
+    right: 0px;
+    top: 400px;
+    bottom: 0;
+    transform: translateX(100%);
+    /* menu aan rechterkant uitschuiven*/
+    transition: .5s;
+    z-index: 50;
+    height: 30px;
+    width: 30px;
+    
+}
+
+.jordan-t {
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    color: black;
+    position: relative;
+    left: 60px;
+    top: 15px;
+    text-decoration: none;
+}
+
+nav .converse {
+    position: fixed;
+    left: -7px;
+    right: 0px;
+    top: 450px;
+    bottom: 0;
+    transform: translateX(100%);
+    /* menu aan rechterkant uitschuiven*/
+    transition: .5s;
+    z-index: 50;
+    height: 25px;
+    width: 45px;
+    
+}
+
+.converse-t {
+    font-size: 18px;
+    font-family: "Helvetica Neue";
+    color: black;
+    position: relative;
+    left: 60px;
+    top: 20px;
+    text-decoration: none;
+}
+
+.nav-member {
+    font-size: 20px;
+    font-family: "Helvetica Neue";
+    color: gray;
+    position: relative;
+    left: 25px;
+    top: 100px;
+    width:250px;
+}
+
+.meer-info {
+    font-size:20px;
+    color: black;
+    font-weight: 400;
 }
 
 
-/* SLIDE BALK */
+/* Retourtermijn */
 
 #p-one {
-    min-height: 58px;
-    padding-top: 10px;
-    font-size: 100%;
+    font-size: 75%;
     background-color: #f5f5f5;
     font-family: "Helvetica";
     text-align: center;
     box-shadow: inset 0 -1px 0 0 #e5e5e5;
-    line-height: 40px;
+    line-height: 45px;
     font-weight: 100;
 }
+
 .meerinfo {
     font-weight: 400;
 }
 
 
-/* ZOEKBALK */
-/* .zoek-balk {
-    position: relative;
-    right: 110px;
-    transform: translate (-50%, -50%);
-    background-color: white;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    width: 10px;
-}
-
-.zoek-balk:hover .zoek-button {
-    width: 240px;
-    padding: 1 6px;
-}
-
-.zoek-button {
-    color: black;
-    float: right;
-    width: 2px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-} */
-
-/* #search {
-    border: none;
-    background: none;
-    outline: none;
-    float: right;
-    padding: 10px;
-    color: black;
-    font-size: 10px;
-    transition: 0.4s;
-    line-height: 50px;
-    width: 0px;
-   
-} */
-
-
-
-
-
-/* EERSTE SECTION */
+/* Ontdek je drive */
 
 #start {
-    max-height:auto;
-    border: 20px solid;
+    max-width: 100%;
+    border: 15px solid;
     border-color: white;
-    align-content: center;
-    right:30px;
     z-index: 0;
-    position: relative;
-    left: 20px;
-    
-    
 }
-/* MEDIA QUERIES */
 
-@media (min-width:600px) {
- 
-    
-}
 section button.bekijk {
     border: none;
     cursor: pointer;
     border-radius: 50px;
     color: white;
     background-color: black;
-    font-size: 20px;
-    text-align: center;
+    font-size: 17px;
     font-family: "Helvetica";
-    width: 150px;
-    height: 50px;
+    width: 110px;
+    height: 40px;
     position: relative;
-    bottom: 130px;
-    left: 70px;
-
+    bottom: 90px;
+    left: 40px;
+    appearance: none;
+}
+section button.bekijk:active{
+    background-color:forestgreen;
 }
 
 #play {
-    width: 30px;
-    font-size: 14px;
+    width: 20px;
+    font-size: 12px;
     text-align: center;
     position: relative;
-    bottom: 2px;
+    bottom: 1.2px;
 }
 
 #p-two {
-    display: block;
-    padding: 1em;
-    text-align: left;
-    font-size: 140%;
-    vertical-align: baseline;
+    padding: 1.5em;
+    font-size: 100%;
     background-color: white;
     font-family: "Helvetica";
     position: relative;
-    bottom: 40px;
-    left: 10px;
+    bottom: 70px;
     font-weight: 400;
 }
 
-h2 {
-    position: relative;
-    left: 10px;
-    font-size: 63px;
+h1 {
+    font-size: 55px;
     font-weight: 600;
     text-align: center;
-    font-family: "Futura-CondensedExtraBold", sans-serif;
+    font-family: "Futura-CondensedExtraBold";
+    position: relative;
+    bottom: 50px;
 }
 
 section button.ontdek-je-drive {
@@ -284,82 +317,144 @@ section button.ontdek-je-drive {
     border-radius: 50px;
     color: white;
     background-color: black;
-    font-size: 22px;
-    width: 200px;
+    font-size: 20px;
+    width: 170px;
     height: 50px;
     position: relative;
-    left: 30px;
-    bottom: 30px;
+    left: 25px;
+    bottom: 75px;
     font-family: 'Helvetica';
+    appearance: none;
 }
+section button.ontdek-je-drive:active{
+    background-color:limegreen;
+}
+
+
+/* Trending */
 
 h3 {
-    display: block;
     padding: 1em;
-    text-align: left;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     position: relative;
-    top: 50px;
 }
 
-#trending {
-    max-width: 60%;
-    max-height: auto;
-    display: block;
-    position: relative;
-    border: 30px solid;
+.trending-schoenen {
+    display: flex;
+    flex-direction: row;
+}
+
+#trending1 {
+    order: 1;
+    max-width: 100%;
+    width: 60%;
+    border: 20px solid;
     border-color: white;
-    z-index: 0;
 }
 
-h4 {
-    text-align: left;
-    font-size: 22px;
+#trending2 {
+    order: 2;
+    max-width: 100%;
+    width: 60%;
+    border: 20px solid;
+    border-color: white;
+}
+
+section .schoentekst {
+    display: flex;
+    flex-direction: row;
+}
+
+.schoentekst {
+    font-size: 14px;
     font-weight: 500;
     font-family: "Helvetica Neue";
-    position: relative;
-    left: 30px;
-    bottom:50px;
 }
-h4:nth-of-type(2) {
+
+#schoen1 {
+    order: 1;
+    flex-grow: 2;
     position: relative;
-    bottom: 98px;
-    font-weight: 400;
+    left: 20px;
 }
-h4:nth-of-type(4) {
+
+#schoen2 {
+    order: 2;
     position: relative;
-    bottom: 98px;
-    font-weight: 400;
+    left: 17px;
 }
-#p-three {
-    text-align: left;
-    font-size: 22px;
+
+section .schoentekst2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#herenschoen1 {
+    order: 1;
+    flex-grow: 1;
+    position: relative;
+    left: 20px;
+    bottom: 30px;
+}
+
+#herenschoen2 {
+    order: 2;
+    position: relative;
+    right: 30px;
+    bottom: 30px;
+}
+
+section .schoentekst1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.schoentekst1 {
+    font-size: 17px;
     color: #757575;
-    vertical-align: baseline;
     background-color: white;
     font-family: inherit;
     font-family: "Helvetica Neue";
-    font-weight: 400;
-    position: relative;
-    left: 30px;
-    bottom: 75px;
 }
+
+.schoentekst2 {
+    position: relative;
+    font-weight: 400;
+}
+
+#bedrag1 {
+    order: 1;
+    flex-grow: 1;
+    position: relative;
+    left: 20px;
+    bottom: 60px;
+}
+
+#bedrag2 {
+    order: 2;
+    position: relative;
+    right: 70px;
+    bottom: 60px;
+}
+
+
+/* Versla de kou */
+
+.versladekou {
+    display: flex;
+    flex-direction: column;
+}
+
 #buitenkleding {
     max-width: 100%;
-    max-height: auto;
-    display: block;
-    position: relative;
     border: 23px solid;
     border-color: white;
     z-index: 0;
-   
 }
 
 #laagjes {
     max-width: 100%;
-    max-height: auto;
-    display: block;
     position: relative;
     border: 23px solid;
     border-color: white;
@@ -367,90 +462,63 @@ h4:nth-of-type(4) {
     bottom: 200px;
 }
 
-
-
 #hardlopen {
     max-width: 100%;
-    max-height: auto;
-    display: block;
     position: relative;
-     border: 23px solid;
+    border: 23px solid;
     border-color: white;
     z-index: 0;
-     bottom: 400px;
+    bottom: 300px;
 }
 
 #p-four {
-    display: block;
-    padding: 1em;
-    text-align: left;
-    font-size: 160%;
-    vertical-align: baseline;
-    font-family: inherit;
+    font-size: 19px;
     font-family: "Helvetica";
     position: relative;
-    bottom: 240px;
-    left: 30px;
+    bottom: 220px;
+    left: 44px;
     color: white;
 }
 
 #p-five {
-    display: block;
-    padding: 1em;
-    text-align: left;
-    font-size: 160%;
+    font-size: 19px;
     vertical-align: baseline;
-    font-family: inherit;
     font-family: "Helvetica";
     position: relative;
-    bottom: 440px;
-    left: 30px;
+    bottom: 350px;
+    left: 44px;
     color: white;
 }
 
 #p-six {
-    display: block;
-    padding: 1em;
-    text-align: left;
-    font-size: 160%;
+    font-size: 19px;
     vertical-align: baseline;
-    font-family: inherit;
     font-family: "Helvetica";
     position: relative;
-    bottom: 640px;
-    left: 30px;
+    bottom: 450px;
+    left: 44px;
     color: white;
 }
+
 section button.shop {
     border: none;
     cursor: pointer;
     border-radius: 25px;
     color: black;
     background-color: white;
-    font-size: 22px;
+    font-size: 17px;
     font-family: "Helvetica";
     font-weight: 500;
-    width: 120px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     position: relative;
-    left: 60px;
-    bottom: 250px;
+    left: 44px;
+    bottom: 230px;
+    appearance: none;
 }
 
-section button.shop-kids {
-    border: none;
-    cursor: pointer;
-    border-radius: 25px;
-    color: black;
-    background-color: white;
-    font-size: 22px;
-    font-family: "Helvetica";
-    font-weight: 500;
-    width: 120px;
-    height: 50px;
-    position: relative;
-    left: 60px;
-    bottom: 660px;
+section button.shop:active {
+    background-color:limegreen;
 }
 
 section button.shop1 {
@@ -459,14 +527,18 @@ section button.shop1 {
     border-radius: 25px;
     color: black;
     background-color: white;
-    font-size: 22px;
+    font-size: 17px;
     font-family: "Helvetica";
     font-weight: 500;
-    width: 120px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     position: relative;
-    left: 60px;
-    bottom: 460px;
+    left: 44px;
+    bottom: 360px;
+    appearance: none;
+}
+section button.shop1:active {
+     background-color:limegreen;
 }
 
 section button.shop2 {
@@ -475,28 +547,57 @@ section button.shop2 {
     border-radius: 25px;
     color: black;
     background-color: white;
-    font-size: 22px;
+    font-size: 17px;
     font-family: "Helvetica";
     font-weight: 500;
-    width: 120px;
-    height: 50px;
+    width: 80px;
+    height: 40px;
     position: relative;
-    left: 60px;
-    bottom: 660px;
+    left: 44px;
+    bottom: 460px;
+    appearance: none;
 }
 
-/* FOOTER */
+section button.shop2:active {
+     background-color:limegreen;
+}
+
+
+section button.shop-kids {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 132px;
+    bottom: 499.9px;
+    appearance: none;
+}
+
+section button.shop-kids:active {
+     background-color:limegreen;
+}
+
+
+/* Footer */
 
 footer {
     background-color: black;
-    padding: 0 0.75em;
+    position: relative;
+    height: 50em;
 }
 
 .f-one {
     color: white;
-    padding: 1em;
+    font-size: 11px;
+    font-family: "Helvetica Neue";
     text-align: left;
-    font-size: 14px;
     position: relative;
     right: 15px;
     top: 40px;
@@ -510,12 +611,12 @@ hr {
 
 .help {
     color: white;
-    text-align: left;
     position: relative;
     left: 30px;
     top: 20px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
+    font-family: "Helvetica Neue";
 }
 
 .over-nike {
@@ -523,69 +624,775 @@ hr {
     text-align: left;
     position: relative;
     left: 30px;
-    top: 90px;
-    font-size: 14px;
+    top: 80px;
+    font-size: 12px;
     font-weight: 600;
+    font-family: "Helvetica Neue";
+}
+
+.fa-plus {
+    color: white;
+    font-size: 12px;
+    position: relative;
+    left: 300px;
+    top: 20px;
+}
+
+#plus2 {
+    color: white;
+    font-size: 12px;
+    position: relative;
+    left: 265px;
+    top: 80px;
 }
 
 
-/* ICONS */
+/* Icoontjes */
 
 .twitter {
     position: relative;
     left: 30px;
-    top: 140px;
+    top: 135px;
     color: black;
     background-color: gray;
     align-items: center;
-    font-size: 1.5em;
-    padding: 0.3em;
+    font-size: 1em;
+    padding: 0.3em 0.4em;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.twitter:hover {
+    background-color: white;
+    border-radius: 50%;
 }
 
 .facebook {
     position: relative;
     left: 30px;
-    top: 140px;
+    top: 135px;
     color: black;
     background-color: gray;
     align-items: center;
-    font-size: 1.5em;
-    padding: 0.3em;
+    font-size: 1em;
+    padding: 0.35em 0.6em;
     border-radius: 50%;
-
     margin-right: 20px;
+}
+
+.facebook:hover {
+    background-color: white;
+    border-radius: 50%;
 }
 
 .youtube {
     position: relative;
     left: 30px;
-    top: 140px;
+    top: 135px;
     color: black;
     background-color: gray;
     align-items: center;
-    font-size: 1.5em;
-    padding: 0.3em;
+    font-size: 1em;
+    padding: 0.3em 0.3em;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.youtube:hover {
+    background-color: white;
+    border-radius: 50%;
 }
 
 .instagram {
     position: relative;
     left: 30px;
-    top: 140px;
+    top: 135px;
     color: black;
     background-color: gray;
     align-items: center;
-    font-size: 1.5em;
-    padding: 0.3em;
+    font-size: 1em;
+    padding: 0.3em 0.4em;
     border-radius: 50%;
 }
 
+.instagram:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* Voorwaarden */
+
+.fa-map-marker-alt {
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.nederland {
+    color: white;
+    position: relative;
+    top: 160px;
+    font-size: 10px;
+}
+
 .p-five {
+    font-size: 11px;
     color: gray;
     position: relative;
-    top: 200px;
+    top: 165px;
+    left: 25px;
+}
+
+li .f-two {
+    color: gray;
+    font-size: 12px;
+    text-align: left;
+    position: relative;
+    right: 30px;
+    top: 170px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 18px;
+}
+
+
+/* Dames hoofdline */
+
+.dames {
+    font-size: 26px;
+    text-align: left;
+    position: relative;
+    font-family: "Helvetica";
+    font-weight: 400;
+    left: 15px;
+    top: 0px;
+}
+
+.dames-opties {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-family: "Helvetica";
+}
+
+.optie1 {
+    order 1;
+    position: relative;
+    left: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.optie1:active{
+    background-color: lightyellow;
+}
+
+.optie2 {
+    order 2;
+    position: relative;
+    left: 40px;
+    color: black;
+    text-decoration: none;
+}
+
+.optie2:active{
+    background-color: lightyellow;
+}
+
+.optie3 {
+    order 3;
+    position: relative;
+    left: 70px;
+    color: black;
+    text-decoration: none;
+}
+.optie3:active{
+    background-color: lightyellow;
+}
+
+.optie4 {
+    order 4;
+    position: relative;
+    left: 100px;
+    width: 150px;
+    color: black;
+    text-decoration: none;
+}
+.optie4:active{
+    background-color: lightyellow;
+}
+
+.optie5 {
+    order 5;
+    position: relative;
+    left: 120px;
+    color: black;
+    text-decoration: none;
+}
+.optie5:active{
+    background-color: lightyellow;
+}
+
+/* Eerste foto blok */
+
+section button.shopkorting {
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    font-size: 17px;
+    font-family: "Helvetica";
+    width: 80px;
+    height: 35px;
+    position: relative;
+    bottom: 360px;
+    left: 25px;
+    appearance: none;
+}
+
+section button.shopkorting:active{
+    background-color:limegreen;
+}
+
+section button.meer-info {
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-family: "Helvetica";
+    width: 110px;
+    height: 35px;
+    position: relative;
+    bottom: 360px;
+    left: 40px;
+    appearance: none;
+}
+
+section button.meer-info:active{
+    background-color:limegreen;
+}
+
+.korting {
+    font-size: 40px;
+    max-width: 250px;
+    font-weight: 600;
+    font-family: "Futura-CondensedExtraBold";
+    position: relative;
+    bottom: 350px;
     left: 30px;
 }
+
+.code {
+    font-size: 16px;
+    width: 300px;
+    font-weight: 100;
+    position: relative;
+    bottom: 370px;
+    left: 30px;
+}
+
+
+/* Tweede foto blok */
+
+#start2 {
+    max-width: 100%;
+    border: 15px solid;
+    border-color: white;
+    z-index: 0;
+    position: relative;
+    bottom: 270px;
+}
+
+.shopdames {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 90px;
+    height: 40px;
+    position: relative;
+    left: 45px;
+    bottom: 580px;
+}
+
+.shopdames:active{
+    background-color:limegreen;
+}
+
+.blazer {
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+    position: relative;
+    bottom: 520px;
+    left: 45px;
+    font-weight: 400;
+}
+
+.clash {
+    font-size: 40px;
+    color: white;
+    max-width: 250px;
+    font-weight: 600;
+    font-family: "Futura-CondensedExtraBold";
+    position: relative;
+    bottom: 550px;
+    left: 45px;
+}
+
+
+/* TRENDING */
+
+.trending-d {
+    padding: 1em;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    bottom: 500px;
+}
+
+.trending-schoenen-d {
+    display: flex;
+    flex-direction: row;
+}
+
+#trending1-d {
+    order: 1;
+    max-width: 100%;
+    width: 60%;
+    border: 20px solid;
+    border-color: white;
+    position: relative;
+    bottom: 530px;
+}
+
+#trending2-d {
+    order: 2;
+    max-width: 100%;
+    width: 60%;
+    border: 20px solid;
+    border-color: white;
+    position: relative;
+    bottom: 530px;
+}
+
+section .schoentekst-d {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 550px;
+}
+
+.schoentekst-d {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Helvetica Neue";
+}
+
+#schoen1-d {
+    order: 1;
+    flex-grow: 2;
+    position: relative;
+    left: 20px;
+    position: relative;
+}
+
+#schoen2-d {
+    order: 2;
+}
+
+section .schoentekst2-d {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 550px;
+}
+
+#damesschoen1 {
+    order: 1;
+    flex-grow: 1;
+    position: relative;
+    left: 20px;
+    bottom: 30px;
+}
+
+#damesschoen2 {
+    order: 2;
+    position: relative;
+    right: 20px;
+    bottom: 30px;
+}
+
+section .schoentekst1-d {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 550px;
+}
+
+.schoentekst1-d {
+    font-size: 17px;
+    color: #757575;
+    background-color: white;
+    font-family: inherit;
+    font-family: "Helvetica Neue";
+}
+
+#bedrag1-d {
+    order: 1;
+    flex-grow: 1;
+    position: relative;
+    left: 20px;
+    bottom: 60px;
+}
+
+#bedrag2-d {
+    order: 2;
+    position: relative;
+    right: 75px;
+    bottom: 60px;
+}
+
+
+/* Versla de kou */
+
+.versla-kou {
+    position: relative;
+    bottom: 550px;
+}
+
+.versladekou-d {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 580px;
+}
+
+#buitenkleding-d {
+    max-width: 100%;
+    border: 23px solid;
+    border-color: white;
+    z-index: 0;
+}
+
+#laagjes-d {
+    max-width: 100%;
+    position: relative;
+    border: 23px solid;
+    border-color: white;
+    z-index: 0;
+    bottom: 200px;
+}
+
+#hardlopen-d {
+    max-width: 100%;
+    position: relative;
+    border: 23px solid;
+    border-color: white;
+    z-index: 0;
+    bottom: 300px;
+}
+
+#p-four-d {
+    font-size: 19px;
+    font-family: "Helvetica";
+    position: relative;
+    bottom: 220px;
+    left: 44px;
+    color: white;
+}
+
+#p-five-d {
+    font-size: 19px;
+    vertical-align: baseline;
+    font-family: "Helvetica";
+    position: relative;
+    bottom: 350px;
+    left: 44px;
+    color: white;
+}
+
+#p-six-d {
+    font-size: 19px;
+    vertical-align: baseline;
+    font-family: "Helvetica";
+    position: relative;
+    bottom: 450px;
+    left: 44px;
+    color: white;
+}
+
+section button.shop-d {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    left: 44px;
+    bottom: 230px;
+    appearance: none;
+}
+
+section button.shop-d:active {
+    background-color: limegreen;
+}
+
+section button.shop1-d {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    left: 44px;
+    bottom: 360px;
+    appearance: none;
+}
+
+section button.shop1-d:active {
+    background-color: limegreen;
+}
+
+section button.shop2-d {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    left: 44px;
+    bottom: 460px;
+    appearance: none;
+}
+
+section button.shop2-d:active {
+    background-color: limegreen;
+}
+
+section button.shop-kids-d {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    left: 132px;
+    bottom: 499.9px;
+    appearance: none;
+}
+
+section button.shop-kids-d:active {
+    background-color: limegreen;
+}
+
+
+/* Gear up */
+
+.gear-up {
+    padding: 1em;
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    bottom: 800px;
+}
+
+.gear-up-d {
+    display: flex;
+    flex-direction: row;
+}
+
+#gear-up1-d {
+    order: 1;
+    max-width: 100%;
+    width: 60%;
+    border: 20px solid;
+    border-color: white;
+    position: relative;
+    bottom: 830px;
+}
+
+#gear-up2-d {
+    order: 2;
+    max-width: 100%;
+    width: 60%;
+    border: 20px solid;
+    border-color: white;
+    position: relative;
+    bottom: 830px;
+}
+
+section .gear-up-tekst-d {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 850px;
+}
+
+.gear-up-tekst-d {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Helvetica Neue";
+}
+
+#g-schoen1 {
+    order: 1;
+    flex-grow: 1;
+    position: relative;
+    left: 20px;
+}
+
+#short-d {
+    order: 2;
+    position: relative;
+    right: 68px;
+    position: relative;
+}
+
+section .gear-up-tekst2-d {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 850px;
+}
+
+#g-schoentekst1-d {
+    order: 1;
+    flex-grow: 1;
+    position: relative;
+    left: 20px;
+}
+
+#g-short {
+    order: 2;
+    position: relative;
+    left: 80px;
+}
+
+section .gear-up-tekst1-d {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 880px;
+}
+
+.gear-up-tekst1-d {
+    font-size: 17px;
+    color: #757575;
+    font-family: inherit;
+    font-family: "Helvetica Neue";
+}
+
+#g-bedrag1-d {
+    order: 1;
+    flex-grow: 1;
+    position: relative;
+    left: 20px;
+    bottom: 60px;
+}
+
+#g-bedrag2-d {
+    order: 2;
+    position: relative;
+    right: 75px;
+    bottom: 60px;
+}
+
+
+/* Gemaakt om in te bewegen */
+
+.bewegen {
+    font-size: 24px;
+    font-weight: 500;
+    position: relative;
+    bottom: 800px;
+}
+
+#bewegen2 {
+    max-width: 100%;
+    border: 15px solid;
+    border-color: white;
+    z-index: 0;
+    position: relative;
+    bottom: 810px;
+}
+
+.meerinfo2 {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 45px;
+    bottom: 1040px;
+}
+
+.meerinfo2:active{
+    background-color:limegreen;
+}
+
+.bh {
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: black;
+    background-color: white;
+    font-size: 17px;
+    font-family: "Helvetica";
+    font-weight: 500;
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 45px;
+    bottom: 1040px;
+}
+
+.bh:active {
+    background-color: limegreen;
+}
+
+.vragen {
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    position: relative;
+    bottom: 1040px;
+    left: 45px;
+    font-weight: 400;
+}
+

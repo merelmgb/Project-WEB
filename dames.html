@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="jouw naam">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Nike.com/nl/</title>
+    <title>Nike.com/nl/Dames</title>
     <link href="styles/style.css" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -18,7 +18,7 @@
     <header>
 
         <!-- LOGO -->
-        <a href="index.html"><img id="logo" src="images/logo.png" alt=homepage></a>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="Terug naar homepage"></a>
 
         <!-- HAMBURGERMENU -->
         <nav>
@@ -27,84 +27,182 @@
             <button aria-hidden="true"></button>
 
             <ul>
-                <li><a href="#">Nieuwe releases</a></li>
-                <li><a href="#">Heren</a></li>
-                <li><a href="#">Dames</a></li>
-                <li><a href="#">Kids</a></li>
-                <li><a href="#">Cadeau</a></li>
-                <li><a href="#">Sale</a></li>
-                <li><a href="#">Collecties</a></li>
+                <li><a class="hamburger" href="#">Nieuwe releases</a><i class="fas fa-chevron-right"></i></li>
+                <li><a class="hamburger" href="#">Heren</a><i class="fas fa-chevron-right"></i></li>
+                <li><a class="hamburger" href="dames.html">Dames</a><i class="fas fa-chevron-right"></i></li>
+                <li><a class="hamburger" href="#">Kids</a><i class="fas fa-chevron-right"></i></li>
+                <li><a class="hamburger" href="#">Cadeau</a><i class="fas fa-chevron-right"></i></li>
+                <li><a class="hamburger" href="#">Sale</a><i class="fas fa-chevron-right"></i></li>
+                <li><a class="hamburger" href="#">Collecties</a><i class="fas fa-chevron-right"></i></li>
+
+                <li>
+                    <a><img class="jordan" src="images/1200px-Jumpman_logo.svg.png" alt="Jordan">
+                        <p class="jordan-t">Jordan</p>
+                    </a>
+                </li>
+                <li>
+                    <a><img class="converse" src="images/Converse-Logo.png" alt="Converse">
+                        <p class="converse-t">Converse</p>
+                    </a>
+                </li>
+
+                <li>
+                    <p class="nav-member">Word Nike member en geniet van de beste producten, inspiratie en verhalen op het gebied van sport. <b class="meer-info">Meer info</b></p>
+                </li>
 
             </ul>
+
+
         </nav>
 
         <!-- ZOEKBALK -->
-      
-        <a class="zoek" href="#" title="zoek"><i class="fas fa-search"></i><span></span></a>
+
+        <a class="zoek" href="#" title="zoek"><span class="fas fa-search"></span></a>
 
         <!-- WINKELMANDJE -->
-        <a class="winkelmandje" href="#" title="winkelmandje"><i class="fas fa-shopping-bag"></i><span></span></a>
+        <a class="winkelmandje" href="#" title="winkelmandje"><span class="fas fa-shopping-bag"></span></a>
 
     </header>
 
-    <p id="p-one">COVID-19: <b><u>Hier</u></b> vind je meer informatie over Nike Stores en bezorging van je bestelling</p>
+    <p id="p-one">We hebben het retourtermijn verlengd tot 60 dagen. <u class="meerinfo">Meer info</u></p>
 
     <!-- Alles ertussenin -->
-    
-  <!-- Alles ertussenin -->
     <main>
-        <h2>Dames</h2>
+        <h1 class="dames">Dames</h1>
         <section>
-            <ul>
-                <li><a class="f-one" href="#">Schoenen</a></li>
-                <li><a class="f-one" href="#">Kleding</a></li>
-                <li><a class="f-one" href="#">Sale</a></li>
-                <li><a class="f-one" href="#">Broeken en leggings</a></li>
-                <li><a class="f-one" href="#">Sport-bh's</a></li>
-            </ul>
+            <article class="dames-opties">
+                <a href="#" class="optie1">Schoenen</a>
+                <a href="#" class="optie2">Kleding</a>
+                <a href="#" class="optie3">Sale</a>
+                <a href="#" class="optie4">Broeken en leggings</a>
+                <a href="#" class="optie5">Sport-bh's</a>
+            </article>
         </section>
-        
-    <section>
-            <img id="start" src="images/rennen.jpg" alt=start>
-            <button class="bekijk">Bekijk  <i class="fas fa-play"></i></button>
-            <h2> YOU CAN'T BE STOPPED</h2>
-            <p id="p-two"> Weten wat je doet is één ding, maar het is essentieel om te weten wat je drive is.</p>
-            <button class="ontdek-je-drive">Ontdek je drive</button>
+
+        <section>
+
+            <img id="start" src="https://static.nike.com/a/images/f_auto/dpr_2.0/w_335,c_limit/f6ced397-f465-449e-94a2-b4c08fb08e2f/schoenen-kleding-en-accessoires-voor-dames.jpg" alt="afbeelding met korting">
+            <p class="korting">15% EXTRA KORTING OP DE SALE</p>
+            <p class="code">Voor Nike Members. Gebruik de code NIKE2021 bij het afrekenen.*</p>
+            <button class="shopkorting">Shop</button>
+            <button class="meer-info">*Meer info</button>
+            <img id="start2" src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/20eea038-c3bd-465b-9374-1742c49a9502/schoenen-kleding-en-accessoires-voor-dames.jpg" alt="Icon Clash Collectie Dames">
+            <p class="blazer">In haar Blazers</p>
+            <p class="clash">ICON CLASH COLLECTIE</p>
+            <button class="shopdames">Shop</button>
+
         </section>
-        
+
         <!-- Trending -->
+        <h3 class="trending-d">Trending deze week</h3>
         <section>
-            <h3>Trending deze week</h3>
-            <img id="trending" src="images/damesschoen.jpg" alt="trending">
-            <h4>Nike Air Force 1 '07</h4>
-            <p id="p-three">Damesschoen</p>
-            <h4>€99,99</h4>
+            <article class="trending-schoenen-d">
+                <img id="trending1-d" src="images/damesschoen1.jpg" alt="Nike Court Vintage Premium schoen Dames">
+
+                <img id="trending2-d" src="images/damesschoen2.jpg" alt="Nike Blazer Low LE schoen Dames">
+            </article>
         </section>
-        
+
+        <section>
+            <article class="schoentekst-d">
+                <h4 id="schoen1">Nike Court Vintage Premium</h4>
+                <h4 id="schoen2-d">Nike Blazer Low LE</h4>
+            </article>
+        </section>
+
+        <section>
+            <article class="schoentekst1-d">
+                <p id="damesschoen1">Damesschoen</p>
+                <p id="damesschoen2">Damesschoen</p>
+            </article>
+        </section>
+
+        <section>
+            <article class="schoentekst2-d">
+                <h4 id="bedrag1-d">€74,99</h4>
+                <h4 id="bedrag2-d">€89,99</h4>
+            </article>
+        </section>
+
+
+        <!-- Versla de kou -->
+        <h3 class="versla-kou">Versla de kou</h3>
+        <section>
+            <article class="versladekou-d">
+                <img id="buitenkleding" src="https://static.nike.com/a/images/f_auto/dpr_2.0/h_500,c_limit/82fb43de-e708-410b-8e93-9b75fcd71d03/schoenen-kleding-en-accessoires-voor-dames.png" alt="Buitenkleding voor dames">
+                <p id="p-four-d"> Buitenkleding voor de hele dag</p>
+                <button class="shop-d">Shop</button>
+
+                <img id="laagjes-d" src="images/Laagjes.jpg" alt="laagjeskleding voor dames">
+                <p id="p-five-d">Opvallende laagjes voor je runs</p>
+                <button class="shop1-d">Shop</button>
+            </article>
+        </section>
+
+        <!-- Gear up -->
+        <h3 class="gear-up">Gear-up</h3>
+        <section>
+            <article class="gear-up-d">
+                <img id="gear-up1-d" src="images/GUd1.jpg" alt="Nike Air Zoom SuperRep 2 schoen Dames">
+
+                <img id="gear-up2-d" src="images/GUd2.jpg" alt="Nike One Damesshort">
+            </article>
+        </section>
+
+        <section>
+            <article class="gear-up-tekst-d">
+                <h4 id="g-schoen1">Nike Air Zoom SuperRep 2</h4>
+                <h4 id="short-d">Nike One</h4>
+            </article>
+        </section>
+
+        <section>
+            <article class="gear-up-tekst1-d">
+                <p id="g-schoentekst1-d">Damesschoen voor HIIT-sessies</p>
+                <p id="g-short">Damesshorts met halfhoge taille (18 cm)</p>
+            </article>
+        </section>
+
+        <section>
+            <article class="gear-up-tekst2-d">
+                <h4 id="g-bedrag1-d">€119,99</h4>
+                <h4 id="g-bedrag2-d">€29,99</h4>
+            </article>
+        </section>
+
+        <h3 class="bewegen">Gemaakt om in te bewegen</h3>
+        <section>
+            <img id="bewegen2" src="images/Dames.jpg" alt="Kleding om in te bewegen">
+            <p class="vragen">Heb je een vraag over ondersteuning, maten, of wasadvies? Wij hebben het antwoord.</p>
+            <button class="meerinfo2">Meer info</button>
+            <button class="bh">Shop bh's</button>
+        </section>
+
     </main>
 
-
     <!-- Zwarte deel onder aan de pagina -->
-    <footer>
+    <footer class="footer">
         <!-- Links bovenin -->
         <section>
-            <ul>
-                <li><a class="f-one" href="#">CADEAUBONNEN</a></li>
-                <li><a class="f-one" href="#">ZOEK EEN STORE</a></li>
-                <li><a class="f-one" href="#">MELD JE AAN VOOR E-MAILS</a></li>
-                <li><a class="f-one" href="#">WORD MEMBER</a></li>
-                <li><a class="f-one" href="#">STUDENTENKORTING</a></li>
-                <li><a class="f-one" href="#">STUUR ONS FEEDBACK</a></li>
-            </ul>
+            <article>
+                <ul>
+                    <li><a class="f-one" href="#">CADEAUBONNEN</a></li>
+                    <li><a class="f-one" href="#">ZOEK EEN STORE</a></li>
+                    <li><a class="f-one" href="#">MELD JE AAN VOOR E-MAILS</a></li>
+                    <li><a class="f-one" href="#">WORD MEMBER</a></li>
+                    <li><a class="f-one" href="#">STUDENTENKORTING</a></li>
+                    <li><a class="f-one" href="#">STUUR ONS FEEDBACK</a></li>
+                </ul>
+            </article>
         </section>
 
         <hr style="height:1px;border-width:0;color:gray;background-color:gray ">
 
         <!-- Help -->
-        <section><a class="help" herf="#">HELP</a></section>
+        <section><a class="help" herf="#">HELP</a><i class="fas fa-plus"></i></section>
 
         <!-- Over Nike -->
-        <section><a class="over-nike" herf="#">OVER NIKE</a></section>
+        <section><a class="over-nike" herf="#">OVER NIKE</a><i id="plus2" class="fas fa-plus"></i></section>
 
         <!-- Social -->
         <section>
@@ -115,24 +213,32 @@
         </section>
 
         <!-- Copyright -->
+
+        <p class="nederland"><i class="fas fa-map-marker-alt"></i>Nederland</p>
+
         <section>
-            <p class="p-five">C 2020 Nike, Inc. Alle rechten voorbehouden</p>
+            <p class="p-five">© 2020 Nike, Inc. Alle rechten voorbehouden</p>
         </section>
+
 
         <!-- Voorwaarden -->
         <section>
             <ul>
-                <li><a href="#">Handleidingen</a></li>
-                <li><a href="#">Algemene voorwaarden</a></li>
-                <li><a href="#">Verkoopvoorwaarden</a></li>
+
+                <li><a class="f-two" href="#">Handleidingen</a></li>
+                <li><a class="f-two" href="#">Algemene voorwaarden</a></li>
+                <li><a class="f-two" href="#">Verkoopvoorwaarden</a></li>
+                <li><a class="f-two" href="#">Bedrijfsgegevens</a></li>
+                <li><a class="f-two" href="#">Privacy- en cookiebeleid</a></li>
+                <li><a class="f-two" href="#">Cookie-instellingen</a></li>
+
+
             </ul>
         </section>
 
     </footer>
 
-
-
     <script src="scripts/script.js"></script>
 </body>
-	
+
 </html>

@@ -22,8 +22,8 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 -dit ging goed & dit was lastig-
 
 **Screenshot(s):**
-
-<img src="eindresultaat.png" width="375px" alt="eindresultaat">
+Eindresultaat
+<img src="images/eindresultaat.png" width="375px" alt="eindresultaat">
 
 
 
